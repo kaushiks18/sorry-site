@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { getAssetPath } from "@/utils/paths"
 import { useEffect, useState } from "react"
 
 export default function DiaryPage({ setCurrentPage }) {
@@ -41,7 +42,7 @@ export default function DiaryPage({ setCurrentPage }) {
             className="mb-6"
           >
             <img
-              src="/gifs/sad-teddy.gif"
+              src={getAssetPath("/gifs/sad-teddy.gif")}
               alt="Sad teddy"
               className="w-32 h-32 mx-auto rounded-lg"
             />

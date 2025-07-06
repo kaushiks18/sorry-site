@@ -3,6 +3,7 @@
 import { motion, AnimatePresence } from "framer-motion"
 import { useState } from "react"
 import { Heart } from "lucide-react"
+import { getAssetPath } from "@/utils/paths"
 
 export default function HugPage({ setCurrentPage }) {
   const [hearts, setHearts] = useState([])
@@ -63,7 +64,7 @@ export default function HugPage({ setCurrentPage }) {
         {/* Cute aura around teddy */}
         <div className="absolute inset-0 bg-gradient-to-r from-pink-400/25 to-red-400/25 rounded-full blur-2xl scale-110"></div>
         <img
-          src="/gifs/teddy-hug.gif"
+          src={getAssetPath("/gifs/teddy-hug.gif")}
           alt="Teddy with open arms"
           className=" mx-auto rounded-2xl relative z-10"
         />
