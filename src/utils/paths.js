@@ -1,5 +1,5 @@
-// Utility to get the correct path for assets in GitHub Pages
+// Utility to get the correct path for assets
 export const getAssetPath = (path) => {
-  const basePath = process.env.NODE_ENV === 'production' ? '/sorry-site' : '';
-  return `${basePath}${path}`;
+  // Remove leading slash and let Next.js handle the basePath
+  return path.startsWith('/') ? path.substring(1) : path;
 };

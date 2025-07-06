@@ -1,7 +1,6 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { getAssetPath } from "@/utils/paths"
 
 export default function OpeningPage({ setCurrentPage, setMusicPlaying, setShowMusicPlayer }) {
   const handleLetMeTalk = () => {
@@ -53,7 +52,7 @@ export default function OpeningPage({ setCurrentPage, setMusicPlaying, setShowMu
         {/* Cute glow effect around teddy */}
         <div className="absolute inset-0 bg-gradient-to-r from-pink-400/20 to-purple-400/20 rounded-full blur-xl scale-110"></div>
         <img
-          src={getAssetPath("/gifs/teddy-walking.gif")}
+          src="./gifs/teddy-walking.gif"
           className="w-64 h-64 mx-auto rounded-2xl relative z-10"
           alt="Teddy walking"
         />

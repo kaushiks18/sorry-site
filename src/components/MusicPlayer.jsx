@@ -3,7 +3,6 @@
 import { useRef, useEffect, useState } from "react"
 import { motion } from "framer-motion"
 import { Volume2, VolumeX } from "lucide-react"
-import { getAssetPath } from "@/utils/paths"
 
 export default function MusicPlayer({ musicPlaying, setMusicPlaying }) {
   const audioRef = useRef(null)
@@ -64,7 +63,7 @@ export default function MusicPlayer({ musicPlaying, setMusicPlaying }) {
 
       {/* Background music audio */}
       <audio ref={audioRef} loop preload="auto">
-        <source src={getAssetPath("/audio/bg.mp3")} type="audio/mpeg" />
+        <source src="./audio/bg.mp3" type="audio/mpeg" />
       </audio>
     </motion.div>
   )

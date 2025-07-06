@@ -1,7 +1,6 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { getAssetPath } from "@/utils/paths"
 import { useState, useEffect } from "react"
 
 export default function ApologyPage({ setCurrentPage }) {
@@ -29,7 +28,7 @@ export default function ApologyPage({ setCurrentPage }) {
         className="mb-8"
       >
         <img
-          src={getAssetPath("/gifs/notice-me.gif")}
+          src="./gifs/notice-me.gif"
           alt="Teddy trying to convincing"
           className="w-56 mx-auto rounded-lg"
         />

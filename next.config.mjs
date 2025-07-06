@@ -5,7 +5,9 @@ const nextConfig = {
   images: {
     unoptimized: true
   },
-  // Remove basePath and assetPrefix for now to fix image loading
+  // Add basePath for GitHub Pages
+  basePath: process.env.NODE_ENV === 'production' ? '/sorry-site' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/sorry-site/' : '',
   distDir: 'out',
 };
 
